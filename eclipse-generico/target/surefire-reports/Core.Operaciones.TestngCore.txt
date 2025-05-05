@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Core.Operaciones.TestngCore
--------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 83.48 s -- in Core.Operaciones.TestngCore
