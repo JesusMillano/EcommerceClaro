@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pasos>
+	<Ventana Name="ConfiguracionData">
+	    <!--- NAvegadores permitidos "Firefox" "Chrome" -->
+		<paso name="Navegador" by="Id" Path="Chrome" descripcion="Chrome"/>
+		<paso name="Plataforma" by="Id" Path="WEB" descripcion=""/>
+	</Ventana>
+	
+	<Ventana Name="PaginaServicios">
+
+									
+		<paso name="selectRegion" by="Xpath" Path="//*[@id='WC_formularioFactura_AddressEntryForm_FormInput_state_1-button']/span[1]" descripcion=""/>
+		<paso name="listRegion" by="Xpath" Path="//*[@id='WC_formularioFactura_AddressEntryForm_FormInput_state_1-menu']/li" descripcion=""/>
+		
+		<paso name="inputComuna"  by="Xpath" Path="//*[@id='comuna2']" descripcion=""/>
+		
+		<paso name="radioCondominio"  by="Xpath" Path="//*[@id='condominio']" descripcion=""/>
+		<paso name="radioCasa"  by="Xpath" Path="//*[@id='casaParticular']" descripcion=""/>
+		<paso name="radioCondEdificio"  by="Xpath" Path="//*[@id='condominioEdificio']" descripcion=""/>
+		<paso name="radioDepartamento"  by="Xpath" Path="//*[@id='departamento']" descripcion=""/>
+		<paso name="inputDireccion"  by="Xpath" Path="//*[@id='direccion']" descripcion=""/>
+		<paso name="inputNumeracion"  by="Xpath" Path="//*[@id='numeroExt']" descripcion=""/>
+		<paso name="inputCasaCondomin"  by="Xpath" Path="//*[@id='casa']" descripcion=""/>
+		<paso name="inputTorre"  by="Xpath" Path="//*[@id='torre']" descripcion=""/>
+		<paso name="inputDepa"  by="Xpath" Path="//*[@id='depa']" descripcion=""/>
+	
+		<paso name="btnSiguiente" by="Xpath" Path="//*[@id='btnNextValidatePlanView']" descripcion=""/>
+	
+		<paso name="tagPlanes" by="Xpath" Path="//*[@id='container_3074457345618271304']/div[3]/div[2]" descripcion=""/>	
+		<paso name="tituloPlanes"  by="Xpath" Path="//*[@id='titulo-hogar']/p/span" descripcion=""/>
+		
+		<paso name="btnSigtePlan" by="Xpath" Path="//*[@id='btnNextSelectContraView']" descripcion=""/>
+		
+		<paso name="inputCarnet" by="Xpath" Path="//*[@id='carnetIdentidad']" descripcion=""/>
+		<paso name="inputNombre" by="Xpath" Path="//*[@id='nombre']" descripcion=""/>
+		<paso name="inputApellidos" by="Xpath" Path="//*[@id='apellido']" descripcion=""/>
+		<paso name="inputTelefono" by="Xpath" Path="//*[@id='telefonoOtro']" descripcion=""/>
+		
+		<paso name="checkYoRecibo" by="Xpath" Path="//*[@id='checkboxReceiver1Id']" descripcion=""/>
+		<paso name="checkOtraPersona" by="Xpath" Path="//*[@id='checkboxReceiver2Id']" descripcion=""/>
+		<paso name="otraPersNombre" by="Xpath" Path="//*[@id='name1InputId']" descripcion=""/>
+		<paso name="otraPersApellido" by="Xpath" Path="//*[@id='lastName1InputId']" descripcion=""/>
+		<paso name="otraPersRut" by="Xpath" Path="//*[@id='rut1InputId']" descripcion=""/>
+		<paso name="otraPersFono" by="Xpath" Path="//*[@id='telInput1Id']" descripcion=""/>
+		
+		<paso name="btnFinalizar" by="Xpath" Path="//*[@id='btnFinalizarContraInstall']" descripcion=""/>
+										
+		<paso name="checkServ" by="Xpath" Path="//*[@id='checkHeaderAditional1']" descripcion=""/>
+		<paso name="btnSgteServ" by="Xpath" Path="//*[@id='btnContinueContractInstall']" descripcion=""/>
+
+
+	</Ventana>
+	
+	<Ventana Name="Resumen de Solicitud">
+		<paso name="TagSolicitud" by="Xpath" Path="//*[@id='formularioSeleccion']/div/div/div[2]" descripcion=""/>
+		<paso name="txtPedido" by="Xpath" Path="//*[@id='contentHogar']/div/div[2]/div[1]/div[1]/div[1]" descripcion=""/>
+		<paso name="txtPlan" by="Xpath" Path="/html/body/div[1]/div[7]/div[1]/div/div[2]/div[1]/div[2]/div[3]/div/div/div[1]" descripcion=""/>										
+		
+		<paso name="txtServicio" by="Xpath" Path="/html/body/div[1]/div[7]/div[1]/div/div[2]/div[1]/div[2]/div[6]/div/div/div[1]" descripcion=""/>
+
+	</Ventana>
+	
+	
+	<Ventana Name="PaginaServicios">
+		<paso name="checkInternet" by="Xpath" Path="//*[@id='checkSeleccion1']" descripcion=""/>
+		<paso name="checkTelevision" by="Xpath" Path="//*[@id='checkSeleccion2']" descripcion=""/>
+		<paso name="checkTelefonia" by="Xpath" Path="//*[@id='checkSeleccion3']" descripcion=""/>
+		<paso name="btnSiguiente" by="Xpath" Path="//*[@id='btnNextSelectPlanView']" descripcion=""/>
+	</Ventana>
+	<Ventana Name="PaginaDatosPersonales">
+		<paso name="txtTituloDP" by="Xpath" Path="//*[@id='contentHogar']/div[2]/div[1]" descripcion=""/>
+		<paso name="inputRut" by="Xpath" Path="//*[@id='rut']" descripcion=""/>
+		<paso name="inputTelefono" by="Xpath" Path="//*[@id='telefono']" descripcion=""/>
+		<paso name="selectRegion" by="Xpath" Path="//*[@id='WC_formularioFactura_AddressEntryForm_FormInput_state_1-button']/span[1]" descripcion=""/>
+		<paso name="selectComuna" by="Xpath" Path="//*[@id='comuna2']" descripcion=""/>
+		<paso name="inputDireccion" by="Xpath" Path="//*[@id='direccion']" descripcion=""/>
+		<paso name="inputNumExterior" by="Xpath" Path="//*[@id='numeroExt']" descripcion=""/>
+		<paso name="selectTipoInterior" by="Xpath" Path="//*[@id='tipoInterior']" descripcion=""/>
+		<paso name="btnSiguienteDP" by="Xpath" Path="//*[@value='Siguiente']" descripcion=""/>
+	</Ventana>
+	<Ventana Name="PaginaPlanes">
+		<paso name="checkPlan1" by="Xpath" Path="/html/body/div[8]/div[4]/div[2]/div/div[3]/div[2]/div[2]/div/div/div[1]/article/div[2]" descripcion=""/>
+		<paso name="checkPlan3" by="Xpath" Path="//*[@id='divButtonContent_3074457345616691798']" descripcion=""/>
+		<paso name="xbtnPlanSiguiente" by="Xpath" Path="/html/body/div[7]/form[1]/div/div/div[3]/div[1]/div[15]/div/div[1]/input" descripcion=""/>
+												  
+		<paso name="btnPlanSiguiente" by="Xpath" Path="//*[@value='Siguiente']" descripcion=""/>
+	</Ventana>
+	<Ventana Name="PaginaContratacion">
+		<paso name="inputNombre" by="Xpath" Path="//*[@id='nombre']" descripcion=""/>
+		<paso name="inputApellidos" by="Xpath" Path="//*[@id='apellido']" descripcion=""/>
+		<paso name="inputCorreo" by="Xpath" Path="//*[@id='correo']" descripcion=""/>
+		<paso name="inputNumero" by="Xpath" Path="//*[@id='telefonoOtro']" descripcion=""/>
+		<paso name="btnSiguienteContratacion" by="Xpath" Path="//*[@id='btnFinalizarContraInstall']" descripcion=""/>
+	</Ventana>
+	<Ventana>
+		<paso name="checkCondiciones" by="Xpath" Path="//*[@id='checkSeleccionTyC']" descripcion=""/>
+		<paso name="btnFinalizar" by="Xpath" Path="//*[@id='btnCheckoutPayment']" descripcion=""/>
+	</Ventana>
+
+	<Ventana Name="detalleCompra">
+		<paso name="btnDetalleCompra" by="Xpath" Path="//html/body/main/div/div/div[3]/div/a" descripcion=""/>
+		<paso name="txtPlan" by="Xpath" Path="//*[@id='contentHogar']/div/div[2]/div[1]/div[2]/div[3]/div/div/div[1]" descripcion=""/>
+					
+		<paso name="txtPedido" by="Xpath" Path="//*[@id='contentHogar']/div/div[2]/div[1]/div[1]/div[1]" descripcion=""/>
+	
+		<paso name="inputFechaInstalacion" by="Xpath" Path="//*[@id='fechainstalacion']" descripcion=""/>
+		<paso name="radioAm" by="Xpath" Path="//*[@id='bloqueAm']" descripcion=""/>
+							  
+		
+		
+	</Ventana>
+
+
+
+</Pasos>

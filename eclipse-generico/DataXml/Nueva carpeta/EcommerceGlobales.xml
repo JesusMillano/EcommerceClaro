@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pasos>
+	<Ventana Name="ConfiguracionData">
+	    <!--- NAvegadores permitidos "Firefox" "Chrome" -->
+		<paso name="Navegador"    by="Id" Path="Chrome" descripcion="Chrome"/>
+		<paso name="UrlRecambio"  by="Id" Path="https://cloudqa0-6.cloud.claro.local/catalogo/ClaroPostPagoFormView?catalogId=10052&amp;langId=-5&amp;storeId=10151&amp;equipo=70008033ReBo" descripcion=""/>
+		<paso name="UrlPrepago"   by="Id" Path="https://cloudqa0-6.cloud.claro.local/catalogo" descripcion=""/>-->
+		<paso name="UrlPostpago"  by="Id" Path="https://cloudqa0-6.cloud.claro.local/catalogo/ClaroPostPagoFormView?catalogId=10052&amp;langId=-5&amp;storeId=10151" descripcion=""/>
+		<paso name="UrlHogar"     by="Id" Path="https://cloudqa0-6.cloud.claro.local/hogar/ClaroHogarFrontView?storeId=715837934&amp;ID_Flujo=Ho&amp;ID_Paso=2&amp;numRGU=2&amp;seleccionTecnologia=H_internet,H_Television&amp;sku=2ph0419_20" descripcion=""/>
+		<paso name="Plataforma"   by="Id" Path="WEB" descripcion=""/>
+		
+		
+	</Ventana>
+	<Ventana Name="WebPay">
+		<paso name="btnTarjetasDebito" by="Xpath" Path="/html/body/app-root/app-home/main-panel/main/section/left-panel/div/app-payment-select/div/div/button[1]" descripcion=""/>
+		<paso name="selectBanco"      by="Xpath" Path="//html/body/app-root/app-home/main-panel/main/section/right-panel/app-debit/div/div/button/span" descripcion=""/>
+
+		<paso name="opBanco" by="Xpath" Path="/html/body/app-root/app-home/main-panel/main/section/right-panel/app-debit/div/div/ul/li[1]/button/span" descripcion=""/>
+		<paso name="tagImgWebpay" by="Xpath" Path="/html/body/app-root/app-home/main-panel/app-header/header/div/img" descripcion=""/>
+	    <paso name="tagImgTransbank" by="Xpath"  Path="/html/body/div/form/table/tbody/tr[1]/td/img" descripcion=""/>
+		
+		<paso name="optionPanel" by="Xpath" Path="//html/body/app-root/app-home/main-panel/main/section/right-panel" descripcion=""/>
+		<paso name="txtNumTarjeta" by="Xpath" Path="//*[@id='pan']" descripcion=""/>
+		<paso name="btnContinuarWebPay" by="Xpath" Path="//html/body/app-root/app-home/main-panel/main/section/right-panel/app-debit/form[1]/button" descripcion=""/>
+		<paso name="sectionIframe" by="Xpath" Path="//*[@id='control']/frame[2]" descripcion=""/>
+		<paso name="txtRutTrans" by="Xpath" Path="//*[@id='rutClient']" descripcion=""/>
+		<paso name="txtClaveTrans" by="Xpath" Path="//*[@id='passwordClient']" descripcion=""/>
+		<paso name="btnAceptarTrans" by="Xpath" Path="//html/body/div/form/table/tbody/tr[9]/td/input[1]" descripcion=""/>
+		<paso name="btnContinuarTrans" by="Xpath" Path="/html/body/div/form/table/tbody/tr[4]/td/input" descripcion=""/>
+	</Ventana>
+	
+	<Ventana Name="Otras">
+		<paso name="tagSMS" by="Xpath" Path="//*[@id='lblENVSMSINCLUI']" descripcion=""/>
+		<paso name="loadingPopUp" by="Xpath" Path="//*[@id='loading']" descripcion=""/>
+	</Ventana>
+
+	<Ventana Name="Datos personales">
+		<paso name="inputRut" 		by="Xpath" Path="//*[@id='rut']" descripcion=""/>
+		<paso name="inputTelefono"	by="Xpath" Path="//*[@id='telefono']" descripcion=""/>
+		<paso name="inputCorreo"	by="Xpath" Path="//*[@id='correo']" descripcion=""/>
+		<paso name="check"			by="Xpath" Path="//*[@id='checkbox']" descripcion=""/>
+		<paso name="checkHogar"			by="Xpath" Path="//*[@id='checkSeleccionTyC']" descripcion=""/>
+		<paso name="btnSiguiente"	by="Xpath"  Path="/html/body/div[5]/div[4]/div/div/div[4]/ul/div[2]/div/div[5]/li/div/button" descripcion=""/>
+
+	</Ventana>	
+	<Ventana Name="Codigo QR">
+		<paso name="DummyQR" by="Xpath" Path="//*[@id='liveness-button']" descripcion=""/>
+		
+	</Ventana>
+</Pasos>

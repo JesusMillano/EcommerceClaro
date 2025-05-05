@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pasos>
+	<Ventana Name="ConfiguracionData">
+	    <!--- NAvegadores permitidos "Firefox" "Chrome" -->
+		
+	</Ventana>
+	<Ventana Name="PaginaEquipos">
+		<paso name="inputBuscar" by="Xpath" Path="//*[@id='SimpleSearchForm_SearchTerm']" descripcion=""/>
+		<paso name="btnBuscar" 	 by="Xpath" Path="//*[@id='searchBox']/a[2]" descripcion=""/>
+		<paso name="txtNombreEquipo" by="Xpath" Path="//html/body/div[2]/div[3]/div/div/div[3]/div[3]/div[2]/div/div[1]/div[2]/ul/li/div[2]/div[1]/a" descripcion=""/>
+		<paso name="listNomColores" by="Xpath" Path="//html/body/div[7]/div[3]/div/div[3]/div[2]/div[2]/div[1]/div[1]/div[4]/ul/li/a/span" descripcion=""/>
+		<paso name="listImgColores" by="Xpath" Path="//html/body/div[7]/div[3]/div/div[3]/div[2]/div[2]/div[1]/div[1]/div[4]/ul/li/a/img" descripcion=""/>
+
+	</Ventana>
+	<Ventana Name="PaginaEquipo">
+		<paso name="txtNomEquipo" 	by="Xpath" Path="/html/body/div[7]/div[3]/div/div[3]/div[2]/div[1]/div[1]/div[4]/h1" descripcion=""/>
+		<paso name="skuEquipo" 		by="Xpath" Path="//html/body/div[7]/div[3]/div/div[3]/div[2]/div[1]/div[1]/span" descripcion=""/>
+		<paso name="listColorEquipo" by="Xpath" Path="//*[@id='P_Color']/li/a/span" descripcion=""/>
+		<paso name="btnComprar" 	 by="Xpath" Path="//html/body/div[7]/div[3]/div/div[3]/div[2]/div[1]/div[1]/div[9]/div[2]/a" descripcion=""/>
+	</Ventana>
+	<Ventana Name="CarritoCompras">
+		<paso name="btnInvitado" by="Xpath" Path="//*[@id='guestShopperContinue']/div[2]" descripcion=""/>
+		<paso name="imgEquipo" 	 by="Xpath" Path="/html/body/div[1]/div[4]/div/div/div/div/div[3]/div[1]/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[1]/div/a/img" descripcion=""/>
+			
+	</Ventana>
+	<Ventana Name="ProcesoDeCompra">
+		<paso name="txtTituloDatos" by="Xpath" Path="//*[@id='WC_UnregisteredCheckout_div_5']" descripcion=""/>
+		<paso name="txtNombre" 		by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_firstName_1']" descripcion=""/>
+		<paso name="txtApellidos" 	by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_lastName_1']" descripcion=""/>
+
+		<paso name="selectDia" by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_date-button']" descripcion=""/>
+		<paso name="optionDia" by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_date-button']/span[2]" descripcion=""/>
+		<paso name="selectMes" 	by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_month-button']" descripcion=""/>
+		<paso name="selectAno" 	by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_year-button']" descripcion=""/>
+		<paso name="txtRut" 	by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_addressField1_1']" descripcion=""/>
+		<paso name="txtTelefono" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_phone1View_1']" descripcion=""/>
+		<paso name="txtCorreo" 	 by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_email1_1']" descripcion=""/>
+		
+		<paso name="selectRegion" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_state_1-button']/span[1]" descripcion=""/>
+		<paso name="optionRegion" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_state_1-menu']/li" descripcion=""/>
+
+    	<paso name="selectComuna" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_city_1-button']/span[1]" descripcion=""/>
+		<paso name="optionComuna" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_city_1-menu']/li"/>
+		<paso name="txtCalle" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_address1_1']" descripcion=""/>
+
+		<paso name="txtNumExterior" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_addressField2_1']" descripcion=""/>
+		<paso name="txtNumInterior" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_addressField3_1']" descripcion=""/>
+		<paso name="selectTipoInterior" by="Xpath" Path="//html/body/div[1]/div[4]/div/div/div/div/div/div/div[3]/div[1]/div[1]/div/div[1]/form/div[23]/div[3]/div[2]/select" descripcion=""/>
+		
+		<paso name="tagConfDatPerso" by="Xpath" Path="//*[@id='WC_UnregisteredCheckout_div_9']" descripcion=""/>
+		<paso name="btnContinuar" 	 by="Xpath" Path="//*[@id='WC_UnregisteredCheckout_links_4']/div[2]" descripcion=""/>
+	</Ventana>
+	<Ventana Name="DatosEnvioFacturacion">
+		<paso name="tituloDatos" 	by="Xpath" Path="//html/body/div[3]/div[5]/div/div/div/div/div/div[1]/div[3]/div/div[1]/div[2]/div[1]/div[2]/span" descripcion=""/>
+		<paso name="checkLegal" 	by="Xpath" Path="//*[@id='checkbox']"/>
+		<paso name="btnDatosContinuar" by="Xpath" Path="//*[@id='shippingBillingPageNext']/div[2]" descripcion=""/>
+	</Ventana>
+	<Ventana Name="WebPay">
+	
+		<paso name="tagImgWebpay" 		by="Xpath" Path="/html/body/app-root/app-home/main-panel/app-header/header/div/img" descripcion=""/>
+		<paso name="tagImgTransbank" 	by="Xpath" Path="/html/body/div/form/table/tbody/tr[1]/td/img" descripcion=""/>
+		<paso name="btnTarjetasDebito" 	by="Xpath" Path="/html/body/app-root/app-home/main-panel/main/section/left-panel/div/app-payment-select/div/div/button[1]" descripcion=""/>
+		<paso name="selectBanco"    by="Xpath" Path="//html/body/app-root/app-home/main-panel/main/section/right-panel/app-debit/div/div/button/span" descripcion=""/>
+		<paso name="opBanco" 		by="Xpath" Path="/html/body/app-root/app-home/main-panel/main/section/right-panel/app-debit/div/div/ul/li[1]/button/span" descripcion=""/>
+		<paso name="optionPanel" 	by="Xpath" Path="//html/body/app-root/app-home/main-panel/main/section/right-panel" descripcion=""/>
+		<paso name="txtNumTarjeta" 	by="Xpath" Path="//*[@id='pan']" descripcion=""/>
+		<paso name="btnContinuarWebPay" by="Xpath" Path="//html/body/app-root/app-home/main-panel/main/section/right-panel/app-debit/form[1]/button" descripcion=""/>
+		<paso name="sectionIframe" 		by="Xpath" Path="//*[@id='control']/frame[2]" descripcion=""/>
+		<paso name="txtRutTrans" 		by="Xpath" Path="//*[@id='rutClient']" descripcion=""/>
+		<paso name="txtClaveTrans" 		by="Xpath" Path="//*[@id='passwordClient']" descripcion=""/>
+		<paso name="btnAceptarTrans" 	by="Xpath" Path="//html/body/div/form/table/tbody/tr[9]/td/input[1]" descripcion=""/>
+		<paso name="btnContinuarTrans" 	by="Xpath" Path="/html/body/div/form/table/tbody/tr[4]/td/input" descripcion=""/>
+	</Ventana>
+	<Ventana Name="detalleCompra">
+		<paso name="btnDetalleCompra" 	by="Xpath" Path="//html/body/main/section/div/div[1]/h3" descripcion=""/>
+		<paso name="ImgOk" 				by="Xpath" Path="//html/body/main/section/div/div[1]/img" descripcion=""/>	
+		<paso name="btnVolverTienda" 	by="Xpath" Path="//html/body/main/section/div/div[1]/h3" descripcion=""/>
+	</Ventana>
+	<Ventana Name="paginaConfirmacion">
+		<paso name="txtNroPedido" by="Xpath" Path="//*[@id='WC_OrderShippingBillingConfirmationPage_span_1']"/>
+		<paso name="txtEquipo" 	  by="Xpath" Path="//*[@id='order_details']/div[2]/div[5]/div[2]/div/div[1]/p"/>
+	</Ventana>
+
+</Pasos>

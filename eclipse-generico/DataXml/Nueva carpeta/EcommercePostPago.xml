@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pasos>
+	<Ventana Name="ConfiguracionData">
+	    <!--- NAvegadores permitidos "Firefox" "Chrome" -->	
+	</Ventana>
+	<Ventana Name="InicioProceso">
+		<paso name="inputRut" by="Xpath" Path="//*[@id='rut']" descripcion=""/>
+		<paso name="inputNumTelefono" by="Xpath" Path="//*[@id='telefono']" descripcion=""/>
+		<paso name="inputCorreo" by="Xpath" Path="//*[@id='correo']" descripcion=""/>
+		<paso name="checkTerminos" by="Xpath" Path="//*[@id='checkbox']" descripcion=""/>
+
+		<paso name="btnLineaMiNumero" by="Xpath"  Path="/html/body/div[5]/div[4]/div/div/div[7]/ul/div[2]/div/div[4]/li[2]/div/button[1]" descripcion="Portar la linea ingresada"/>
+		<paso name="btnLineaMigracion" by="Xpath" Path="/html/body/div[5]/div[4]/div/div/div[7]/ul/div[2]/div/div[2]/li[2]/div/button[1]" descripcion="Debe tener el numero 987654321 para funcionar Migracion"/>													
+		
+		<paso name="btnLineaNueva" by="Xpath"     Path="/html/body/div[5]/div[4]/div/div/div[7]/ul/div[2]/div/div[4]/li[2]/div/button[2]" descripcion="Contratar una linea nueva"/>
+		<paso name="btnPrePago" 	by="Xpath" 	  Path="/html/body/div[5]/div[4]/div/div/div[7]/ul/div[2]/div/div[4]/li[5]/div[3]/button[1]" descripcion=""/>
+		<paso name="btnPostPago" by="Xpath" 	  Path="/html/body/div[5]/div[4]/div/div/div[7]/ul/div[2]/div/div[4]/li[5]/div[3]/button[2]" descripcion=""/>		
+
+		<paso name="tagPlanes" by="Xpath" Path="//*[@id='planescontainer']/section[1]" descripcion=""/>							
+		<paso name="inputOtroTelefono" by="Xpath" Path="/html/body/div[5]/div[4]/div/div/div[4]/ul/div[2]/div/div[4]/li[3]/span/span/input" descripcion=""/>
+		<paso name="btnSiguienteNum" by="Xpath" Path="//*[@id='btn_num_act']" descripcion=""/>
+		
+		<paso name="radio1" by="Xpath" Path="/html/body/div[1]/section[2]/ul/li[3]/div/div/div/form/div[1]/p[2]/input" descripcion="radio 1 linea nueva"/>
+		<paso name="radio2" by="Xpath" Path="/html/body/div[1]/section[2]/ul/li[3]/div/div/div/form/div[2]/p[2]/input" descripcion="radio 2 linea nueva"/>
+		<paso name="radio3" by="Xpath" Path="/html/body/div[1]/section[2]/ul/li[3]/div/div/div/form/div[3]/p[2]/input" descripcion="radio 3 linea nueva"/>
+		<paso name="btnSgteRadios" by="Xpath" Path="/html/body/div[1]/section[2]/ul/li[4]/button" descripcion="siguiente radios linea nueva"/>
+		
+	</Ventana>											
+	<Ventana Name="PaginaPlanes">
+		<paso name="tituloPagina" by="Xpath" Path="//*[@id='page']/section/div/div/div[1]/h1" descripcion=""/>
+		<paso name="tituloPlanes" by="Xpath" Path="//*[@id='planescontainer']/section[1]/article/div[2]/div/div/h1" descripcion=""/>
+		<paso name="tituloPlanes2" by="Xpath" Path="//*[@id='planescontainer']/section[2]/article/div[2]/div/div/h1" descripcion=""/>
+		</Ventana>
+	<Ventana Name="PaginaDocumentoCarnet">
+		<paso name="inputNroSerie" by="Xpath" Path=" //*[@id='carnetIdentidad']" descripcion=""/>
+		<paso name="inputMensaje" by="Xpath" Path="//*[@id='codigoMensaje']" descripcion=""/>
+		<paso name="btnSiguiente" by="Xpath" Path="//*[@id='buttonsigauto']" descripcion=""/>
+	</Ventana>
+	<Ventana Name="PaginaDatosPersonales">
+		<paso name="inputNombrex" by="Xpath" Path="/html/body/div[1]/div[4]/div/div/div/div/div/div/div[5]/div[3]/div[1]/div/div[1]/form/div[5]/input" descripcion=""/>
+		<paso name="inputNombre" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_firstName_1']" descripcion=""/>
+		<paso name="inputApellidosx" by="Xpath" Path="/html/body/div[1]/div[4]/div/div/div/div/div/div/div[5]/div[3]/div[1]/div/div[1]/form/div[7]/input" descripcion=""/>
+		<paso name="inputApellidos" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_lastName_1']" descripcion=""/>
+		
+		<paso name="selectDia" by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_date-button']/span[1]" descripcion=""/>
+		<paso name="selectMes" by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_month-button']/span[1]" descripcion=""/>
+		<paso name="selectAno" by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_year-button']/span[1]" descripcion=""/>
+		<paso name="listAno" by="Xpath" Path="//*[@id='WC_PersonalInfoExtension_birth_year-menu']/li" descripcion=""/>
+		
+		<paso name="selectRegion" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_state_1-button']/span[1]" descripcion=""/>
+		<paso name="listRegion" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_state_1-menu']/li" descripcion=""/>
+
+		<paso name="selectComuna" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_city_1-button']/span[1]" descripcion=""/>
+		<paso name="listComuna" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_city_1-menu']/li" descripcion=""/>
+		
+		<paso name="inputCallex" by="Xpath" Path="/html/body/div[1]/div[4]/div/div/div/div/div/div/div[5]/div[3]/div[1]/div/div[1]/form/div[23]/div[1]/div[2]/input[1]" descripcion=""/>
+		<paso name="inputCalle" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_address1_1']" descripcion=""/>
+		
+		
+		<paso name="inputNumeracion" by="Xpath" Path="//*[@id='WC__ShoppingCartAddressEntryForm_billingAddressCreateEditFormDiv_1_addressField2_1']" descripcion=""/>
+
+		<paso name="btnContratarPlan" by="Xpath" Path="//*[@id='WC_UnregisteredCheckout_links_4']/div[2]" descripcion=""/>
+		<paso name="checkYoRecibo" by="Xpath" Path="//*[@id='checkboxReceiver1Id']" descripcion=""/>
+		
+		<paso name="SiguienteOtraPer" by="Xpath" Path="//*[@id='shippingBillingPageNext']" descripcion=""/>
+	</Ventana>
+	<Ventana Name="PaginaConfirmacion">
+
+		<paso name="tagSolRecibida" by="Xpath" Path="//*[@id='WC_OrderShippingBillingConfirmationPage_div_4']/h1" descripcion=""/>
+		<paso name="txtNumPedido" by="Xpath" Path="//*[@id='WC_OrderShippingBillingConfirmationPage_span_1']" descripcion=""/>
+		<paso name="txtPlan" by="Xpath" Path="//*[@id='ClaroChile_CompraPostPago']/div/div[1]/h1/strong/span" descripcion=""/>
+	</Ventana>
+
+
+
+</Pasos>
