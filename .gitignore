@@ -8,3 +8,18 @@
 .DS_Store
 *.iml
 .idea/
+# Gradle build folders
+.gradle/
+build/
+
+# VSCode settings
+.vscode/
+
+# Temp files
+*.tmp
+
+# Archivos del sistema
+Thumbs.db
+
+# Proteger el propio .gitignore (esto es opcional)
+!.gitignore
